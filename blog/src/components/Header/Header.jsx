@@ -38,6 +38,7 @@ function Header() {
 
 
   return (
+    //navigation bar
     <header className='py-3 shadow bg-gray-500'>
       <Container>
         <nav className='flex'>

@@ -14,3 +14,5 @@ export default function Button({
         </button>
     );
 }
+
+//children is simply the text that has to appear inside the button.
