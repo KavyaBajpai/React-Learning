@@ -7,6 +7,8 @@ import { Footer, Header } from './components'
 import { Outlet } from 'react-router-dom'
 
 function App() {
+  //loading state is used because it usually takes some time to load these files from backend and elsewhere
+  //thus by using this state we can check if we have received the data or it is still loading
   const [loading, setLoading] = useState(true)
   const dispatch = useDispatch()
 
@@ -36,3 +38,6 @@ function App() {
 }
 
 export default App
+
+//useDispatch hook is used for redux management. it imports the functions(reducers)
+//that we have created in the redux store to let us update our states from them
