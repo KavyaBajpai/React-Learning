@@ -11,7 +11,9 @@ function Signup() {
     const [error, setError] = useState("")
     const dispatch = useDispatch()
     const {register, handleSubmit} = useForm()
-
+   //register, handleSubmit: These are destructured from useForm. 
+   //register is used to connect form inputs to react-hook-form,
+   //and handleSubmit is used to process the form submission.
     const create = async(data) => {
         setError("")
         try {
@@ -86,3 +88,13 @@ function Signup() {
 }
 
 export default Signup
+
+//What register Does:
+//Links Inputs to Form State:
+//When you use register("name") or register("email"), it registers that input field with react-hook-form. This means that react-hook-form starts tracking the value of that input, which is later available when the form is submitted or validated.
+//Validation Rules:
+//You can pass validation rules to register. For example, you can define that an input is required, should follow a specific pattern, or must meet other conditions.
+//Handles Validation on Submit:
+//When the form is submitted, react-hook-form checks all the registered inputs and validates them based on the rules you provided via register. If any validation rule fails, the form submission is prevented, and errors are returned.
+//Tracks Form Values:
+//register ensures that the form values can be retrieved easily when the form is submitted. For example, in your create function, you access the form data (like name, email, password) via data that is automatically gathered from all registered fields.
