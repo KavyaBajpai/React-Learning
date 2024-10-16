@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom";
 import Layout from './layout.jsx'
 import Home from './components/home/Home.jsx'
 import About from './components/about/About.jsx'
@@ -52,7 +52,11 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>,
 )
 
-//createBrowserRouter is a function from the React Router library (specifically from react-router-dom), used to define your application's route structure. It creates a browser-based router that leverages the HTML5 history API (i.e., pushState, replaceState, and popstate events) to manage navigation within your app without reloading the page.
+//createBrowserRouter is a function from the React Router library 
+//(specifically from react-router-dom), used to define your application's 
+//route structure. It creates a browser-based router that leverages the HTML5 
+//history API (i.e., pushState, replaceState, and popstate events) to manage 
+//navigation within your app without reloading the page.
 
 //Key Roles of createBrowserRouter:
 //Define Routes: It allows you to specify which components should render based on the URL path. You can define parent-child relationships for nested routing.
